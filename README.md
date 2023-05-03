@@ -11,6 +11,21 @@ Instructions for assembly can be found here: https://www.youtube.com/watch?v=VEq
 You still need to install the library from here: https://github.com/muerzi/SEN0395_Lib
 
 After loading the code the first time, make sure to adjust the values in the webpage.
+You can see the IP on MQTT Objects or on your MQTT-Server
+
+
+![webui](https://user-images.githubusercontent.com/4198159/235928922-823ddf83-8f1e-459a-bc8f-def098292541.png)
+
+Sensitivity: Value 0-9 (0 low sensitivity - 9 high sensitivity)
+
+Range: Range in meters
+
+Delay: How long a presence should still be reported after no one is in the sensor's range. A value of 3 seconds has been found to work well.
+
+LED: Whether the onboard LED of the sensor should blink.
+
+![iobroker](https://user-images.githubusercontent.com/4198159/235928891-6e081a62-8aa8-4c9f-b7de-dde7bc7adc04.png)
+
 
 It's now possible to update the device via OTA
 
@@ -32,5 +47,19 @@ Anleitung zum Aufbau hier: https://www.youtube.com/watch?v=VEqWlOeJ2YA&t=318s
 Es muss noch die Library von hier installiert werden: https://github.com/muerzi/SEN0395_Lib
 
 Nachdem dem ersten Upload auf den Mikrocontroller, konfiguriere die Werte im Webinterface.
+DIe IP findest du in den Objekten des MQTT Adapters bzw auf deinem MQTT Server
+
+![webui](https://user-images.githubusercontent.com/4198159/235928922-823ddf83-8f1e-459a-bc8f-def098292541.png)
+
+Sensitivity: Wert 0-9 (0 wenig sensibel - 9 sehr sensibel)
+
+Range: Reichweite in meter
+
+Delay: Verzögerung wie lange noch eine Präsenz gemeldet werden soll, nachdem keine Person mehr im Bereich des Sensor ist. Hier hat sich ein Wert von 3[sekunden] als gut erwiesen.
+
+LED: ob die onboard LED des Sensors blinken soll
+
+
+![iobroker](https://user-images.githubusercontent.com/4198159/235928891-6e081a62-8aa8-4c9f-b7de-dde7bc7adc04.png)
 
 Es ist jetzt möglich, update über OTA zu installieren

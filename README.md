@@ -29,6 +29,11 @@ LED: Whether the onboard LED of the sensor should blink.
 
 It's now possible to update the device via OTA
 
+A simple Blocky to use this presence Sensor
+
+![blockly_praesence](https://user-images.githubusercontent.com/4198159/235930873-ae9cf7f3-ec9b-4630-9501-078d1b85c6c3.jpg)
+
+
 
 
 
@@ -47,7 +52,7 @@ Anleitung zum Aufbau hier: https://www.youtube.com/watch?v=VEqWlOeJ2YA&t=318s
 Es muss noch die Library von hier installiert werden: https://github.com/muerzi/SEN0395_Lib
 
 Nachdem dem ersten Upload auf den Mikrocontroller, konfiguriere die Werte im Webinterface.
-DIe IP findest du in den Objekten des MQTT Adapters bzw auf deinem MQTT Server
+Die IP findest du in den Objekten des MQTT Adapters bzw auf deinem MQTT Server
 
 ![webui](https://user-images.githubusercontent.com/4198159/235928922-823ddf83-8f1e-459a-bc8f-def098292541.png)
 
@@ -63,3 +68,7 @@ LED: ob die onboard LED des Sensors blinken soll
 ![iobroker](https://user-images.githubusercontent.com/4198159/235928891-6e081a62-8aa8-4c9f-b7de-dde7bc7adc04.png)
 
 Es ist jetzt möglich, update über OTA zu installieren
+
+Hier ein Beispiel wie ein Blockly Skript für den Sensor aussehen könnte
+
+![blockly_praesence](https://user-images.githubusercontent.com/4198159/235930873-ae9cf7f3-ec9b-4630-9501-078d1b85c6c3.jpg)

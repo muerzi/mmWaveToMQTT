@@ -1,5 +1,7 @@
 #include <ESP8266WiFi.h>
 #include <ESP8266WebServer.h>
+#include <WiFiUdp.h>
+#include <ArduinoOTA.h>
 #include <EEPROM.h>
 #include "DFRobot_mmWave_Radar.h"
 #include <PubSubClient.h>
@@ -113,6 +115,9 @@ void setup() {
   Serial.print("IP address: ");
   Serial.println(WiFi.localIP());
 
+  ArduinoOTA.setHostname(clientId.c_str());
+  ArduinoOTA.begin();
+
   mySerial.begin(115200);
   //initial config Sensor with Values from EEPROM
   sensor.DetRangeCfg(0, range);
@@ -142,6 +147,8 @@ void loop() {
   client.loop();
 
   server.handleClient();  // handle incoming client requests
+  ArduinoOTA.handle();
+
   int radarValue = digitalRead(GPIORADAR);
   if (radarValue == HIGH) {
     Serial.println("Person detected");
